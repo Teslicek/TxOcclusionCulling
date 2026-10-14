@@ -1,0 +1,20 @@
+{
+  "required": true,
+  "package": "com.teslicek.txocclusionculling.mixin",
+  "compatibilityLevel": "JAVA_25",
+  "client": [
+    "cull.ChunkRenderListAccessor",
+    "cull.DefaultChunkRendererCullMixin",
+    "cull.LevelRendererOcclusionMixin",
+    "cull.MinecraftOcclusionResetMixin",
+    "cull.RenderRegionOcclusionMixin",
+    "cull.RenderSectionManagerCullMixin",
+    "cull.VulkanCommandEncoderWaitMixin",
+    "gpu.FrontendRenderPassAccessor",
+    "gpu.SodiumWorldRendererOcclusionProbeMixin",
+    "gpu.VulkanRenderPassAccessor"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

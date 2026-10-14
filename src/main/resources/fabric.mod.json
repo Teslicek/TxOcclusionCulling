@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "txocclusionculling",
+  "version": "${version}",
+  "name": "TxOcclusionCulling",
+  "description": "Skips Sodium terrain sections hidden behind the GPU depth of two frames ago while the GPU is the bottleneck.",
+  "authors": ["txslx"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["com.teslicek.txocclusionculling.TxOcclusionCullingClient"]
+  },
+  "accessWidener": "txocclusionculling.classtweaker",
+  "mixins": [
+    {
+      "config": "txocclusionculling.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=0.19.5",
+    "fabric-api": "*",
+    "minecraft": "~26.3",
+    "sodium": "*",
+    "java": ">=25"
+  }
+}
